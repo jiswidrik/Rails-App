@@ -1,2 +1,26 @@
-<h1>Hello, Rails!</h1>
-<%= link_to 'ILike', controller: 'articles' %>
+<!DOCTYPE html>
+<html>
+    <head>
+            <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+            <title>Rails App</title>
+            <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+            <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+            <%= csrf_meta_tags %>
+    </head>
+    <body>
+        <div class="title-box"><p id="title-box-text">I Like</p></div>
+        <div class="content">
+         <%= yield %>
+            <div class="subtitle" id="sub1">
+            </div>
+            <div class="subtitle" id="sub2">
+            </div>
+            <div class="subtitle" id="sub3">
+            </div>
+            <%= link_to 'Go to articles', controller: 'articles' %>
+        </div>
+        <div class="footer">
+            <p id="copyright">Copyright © 2014 Jis</p>
+        </div>
+    </body>
+</html>

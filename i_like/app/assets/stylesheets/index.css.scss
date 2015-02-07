@@ -1,0 +1,48 @@
+// Place all the styles related to the welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+* {
+  border: 1px solid transparent;
+}
+body {
+  background-color: DFFEFF;
+}
+.title-box {
+  position: relative;
+  top: -15px;
+  background-color: #3FE4F0;
+  height: 116px;
+}
+#title-box-text {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 1.8em;
+  margin-top: 40px;
+}
+.content {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer {
+  height: 50px;
+  background-color: gray;
+  margin-bottom: -20px;
+  clear: both;
+  position: relative;
+}
+#copyright {
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 0.6em;
+  margin-top: 19px;
+}
+#git {
+  font-family: Arial, sans-serif;
+  float: left;
+  width: 240px;
+  clear: left;
+  font-size: 0.7em;
+}

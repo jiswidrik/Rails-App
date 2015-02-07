@@ -1,22 +1,36 @@
-<h1>All Articles</h1>
-
-<%= link_to 'New article', new_article_path %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <div class="title-box"><p id="title-box-text">I Like</p></div>
+  </head>
+  
+  <body>
+        <h1>All Articles</h1>
+        <div class="content">
+    <%= link_to 'New article', new_article_path %>
  
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Text</th>
-  </tr>
- 
-  <% @articles.each do |article| %>
-    <tr>
-      <td><%= article.title %></td>
-      <td><%= article.text %></td>
-      <td><%= link_to 'Show', article_path(article) %></td>
-      <td><%= link_to 'Edit', edit_article_path(article) %></td>
-      <td><%= link_to 'Delete', article_path(article),
-              method: :delete,
-              data: { confirm: 'Are you sure?' } %></td>
+    <table>
+      <tr>
+        <th>Title</th>
+        <th>Text</th>
     </tr>
-  <% end %>
-</table>
+ 
+    <% @articles.each do |article| %>
+      <tr>
+        <td><%= article.title %></td>
+        <td><%= article.text %></td>
+        <td><%= link_to 'Show', article_path(article) %></td>
+        <td><%= link_to 'Edit', edit_article_path(article) %></td>
+        <td><%= link_to 'Delete', article_path(article),
+                method: :delete,
+                data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+    </table>
+    
+      </div>
+        <div class="footer">
+            <p id="copyright">Copyright © 2015 Jis</p>
+        </div>
+    </body>
+</html>

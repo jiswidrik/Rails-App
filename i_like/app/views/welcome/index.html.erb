@@ -10,17 +10,12 @@
     <body>
         <div class="title-box"><p id="title-box-text">I Like</p></div>
         <div class="content">
-         <%= yield %>
-            <div class="subtitle" id="sub1">
-            </div>
-            <div class="subtitle" id="sub2">
-            </div>
-            <div class="subtitle" id="sub3">
-            </div>
-            <%= link_to 'Go to articles', controller: 'articles' %>
+          <%= yield %>
+          <p>On this site you can write what you like, and is possible to read others likes too.<p>
+          <%= link_to 'Go to articles', controller: 'articles' %>
         </div>
         <div class="footer">
-            <p id="copyright">Copyright © 2014 Jis</p>
+            <p id="copyright">Copyright © 2015 Jis</p>
         </div>
     </body>
 </html>

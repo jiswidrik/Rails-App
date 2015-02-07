@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ILike</title>
+    <div class="title-box"><p id="title-box-text">I Like</p></div>
+  </head>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+    <%= csrf_meta_tags %>
   </head>
   <body>
 
 <%= yield %>
+
+    <div class="footer">
+      <p id="copyright">Copyright © 2015 Jis</p>
+    </div>
 
   </body>
 </html>

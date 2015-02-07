@@ -13,13 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20150204153834) do
 
-  create_table "articles", force: true do |t|
-    t.string   "title"
-    t.text     "text"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "test", id: false, force: true do |t|
     t.integer "ID",        limit: 1,        null: false
     t.text    "full_name", limit: 255,      null: false

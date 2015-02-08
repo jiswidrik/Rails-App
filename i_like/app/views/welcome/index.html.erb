@@ -1,18 +1,5 @@
-<!DOCTYPE html>
-<html>
-    <head>
-            <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
-            <title>Rails App</title>
-            <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-            <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-            <%= csrf_meta_tags %>
-    </head>
-    <body>
-        <div class="content">
-          <%= yield %>
-          <p>On this site you can write what you like, and is possible to read others likes too.<p>
-          <%= link_to 'Go to articles', controller: 'articles' %>
-        </div>
-      </div>
-    </body>
-</html>
+<div class="content">
+    <%= yield %>
+    <p id="intro-text">On this site you can write what you like, and you can also read others posts.<p>
+    <div class="button-box"><div id="articles-link"><%= link_to 'Go to articles', controller: 'articles' %></div></div>
+</div>

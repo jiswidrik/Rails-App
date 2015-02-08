@@ -13,6 +13,19 @@ body {
   background-color: #3FE4F0;
   height: 116px;
 }
+a:link {
+  text-decoration: none;
+  color: gray;
+}
+a:visited {
+    color: gray;
+}
+a:hover {
+    color: red;
+}
+a:active {
+    color: orange;
+}
 #title-box-text {
   font-family: Arial, sans-serif;
   text-align: center;
@@ -24,11 +37,26 @@ body {
   width: 900px;
   margin-left: auto;
   margin-right: auto;
+  font-family: Arial, sans-serif;
+}
+#intro-text {
+  text-align: center;
+}
+.button-box {
+  margin-left: 23em;
+  height: 50px;
+  width: 150px;
+  background-color: #3FE4F0;
+}
+#articles-link {
+  text-align: center;
+  margin-top: 16px;
 }
 .footer {
   height: 50px;
   background-color: gray;
   margin-bottom: -20px;
+  margin-top: 40px;
   clear: both;
   position: relative;
 }

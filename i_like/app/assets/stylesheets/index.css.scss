@@ -5,13 +5,14 @@
   border: 1px solid transparent;
 }
 body {
-  background-color: DFFEFF;
+  background-color: #DFFEFF;
 }
 .title-box {
   position: relative;
   top: -15px;
   background-color: #3FE4F0;
   height: 116px;
+  border-radius: 10px;
 }
 a:link {
   text-decoration: none;
@@ -32,6 +33,19 @@ a:active {
   color: white;
   font-size: 1.8em;
   margin-top: 40px;
+    a:link {
+  text-decoration: none;
+  color: white;
+  }
+  a:visited {
+    color: white;
+  }
+  a:hover {
+    color: red;
+  }
+  a:active {
+    color: orange;
+  }
 }
 .content {
   width: 900px;
@@ -47,6 +61,7 @@ a:active {
   height: 50px;
   width: 150px;
   background-color: #3FE4F0;
+  border-radius: 10px;
 }
 #articles-link {
   text-align: center;
@@ -59,6 +74,7 @@ a:active {
   margin-top: 40px;
   clear: both;
   position: relative;
+  border-radius: 10px;
 }
 #copyright {
   color: white;
